@@ -320,5 +320,48 @@
         
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <div>
+            <a href="https://info.flagcounter.com/IXwx"><img src="https://s11.flagcounter.com/count2/IXwx/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+        </div>
+        <div id="digit-clock">
+            <script>
+                function displayTime() {
+                    document.getElementById('digit-clock').innerHTML = "Current time:" + new Date();
+                }
+                setInterval(displayTime, 500)
+            </script>
+        </div>
+        <canvas id = "analog-clock" width="150" height="150" style="background-color: #999"></canvas>
+			<script src="https://waph-uc.github.io/clock.js"></script>
+			<script>
+				var canvas = document.getElementById('analog-clock');
+				var ctx = canvas.getContext("2d");
+				var radius = canvas.height / 2;
+				ctx.translate(radius, radius);
+				setInterval(drawClock, 1000);
+
+				function drawClock() {
+					drawFace(ctx, radius);
+					drawNumbers(ctx, radius);
+					drawTime(ctx, radius);
+				}
+			</script>
+        <a>chimalpyy@mail.uc.edu</a>
+		<script>
+            var shown = false;
+            function showhideEmail() {
+	            if (shown)
+                {
+		            document.getElementById('email').innerHTML = "Show my Email";
+	                shown = false;
+	            }else 
+                {
+	                var myemail = "<a href='mailto:chimalpy"+ "@" + "ucmail.uc.edu'>chimalpy" + "@" + "ucmail.uc.edu</a>";
+		            document.getElementById('email').innerHTML = myemail;
+		            shown = true;
+	            }
+            }
+        </script>
+        <p id="p1">Hover the mouse over the sentence.</p>
     </body>
 </html>
