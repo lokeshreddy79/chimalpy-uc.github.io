@@ -12,4 +12,4 @@
 
 ![lokesh's headshot](../../images/headshot.jpg)
 
-github link= [link to my github](https://github.com/lokeshreddy79)
+github link= [link to my github](https://github.com/lokeshreddy79/chimalpy-uc.github.io)
