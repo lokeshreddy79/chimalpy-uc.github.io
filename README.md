@@ -96,7 +96,7 @@ Web APIs Integration (20 pts)
 
 
 ![ss](images/s4.png)
-![SS1](images/s1).png)
+![SS1](images/s1.png)
 ![ss2](images/s2.png)
 ![ss3](images/s3.png)
 
