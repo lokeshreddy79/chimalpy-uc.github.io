@@ -82,7 +82,7 @@ async function fetchData() {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '32e1c16866mshde64614dc1ee456p1df056jsn6f8041875d07',
+            'X-RapidAPI-Key': '76d3917378mshff568fed8e12a08p136191jsnb9cb215f94ac',
             'X-RapidAPI-Host': 'quotes15.p.rapidapi.com'
         }
     };
@@ -105,7 +105,7 @@ async function fetchChuckNorrisJoke() {
         method: 'GET',
         headers: {
             accept: 'application/json',
-            'X-RapidAPI-Key': '32e1c16866mshde64614dc1ee456p1df056jsn6f8041875d07',
+            'X-RapidAPI-Key': '76d3917378mshff568fed8e12a08p136191jsnb9cb215f94ac',
             'X-RapidAPI-Host': 'matchilling-chuck-norris-jokes-v1.p.rapidapi.com'
         }
     };
