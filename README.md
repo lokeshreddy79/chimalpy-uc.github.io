@@ -92,9 +92,9 @@ Web APIs Integration (20 pts)
 -The 'lastVisit' cookie persists thanks to the expires property and stores the last visit info client-side.
 
 
-![ss](images/Screenshot%20(132).png)
-![SS1](images/Screenshot%20(129).png)
-![ss2](images/Screenshot%20(130).png)
-![ss3](images/Screenshot%20(131).png)
+![ss](images/s4.png)
+![SS1](images/s1).png)
+![ss2](images/s2.png)
+![ss3](images/s3.png)
 
 
