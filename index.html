@@ -375,5 +375,50 @@
         <p id="p1">Hover the mouse over the sentence.</p>
 	<div id="quoteContainer"></div>
         <div id="jokeContainer"></div>
+	<script>
+    function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i];
+            while (cookie.charAt(0) === ' ') {
+                cookie = cookie.substring(1, cookie.length);
+            }
+            if (cookie.indexOf(nameEQ) === 0) {
+                return cookie.substring(nameEQ.length, cookie.length);
+            }
+        }
+        return null;
+    }
+
+    function displayWelcomeMessage() {
+        var lastVisit = getCookie("lastVisit");
+
+        if (lastVisit === null) {
+            // First time visit
+            alert("Welcome to my homepage!");
+        } else {
+            // Returning visit
+            alert("Welcome back! Your last visit was " + lastVisit);
+        }
+
+        // Set or update the cookie for the current visit
+        var currentDate = new Date().toLocaleString();
+        setCookie("lastVisit", currentDate, 30); // Cookie expires in 30 days
+    }
+
+    // Display welcome message on page load
+    displayWelcomeMessage();
+</script>
     </body>
 </html>
