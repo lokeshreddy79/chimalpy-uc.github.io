@@ -10,7 +10,7 @@
 
 **Short-bio**: lokeshreddy79 has keen interests in Web software development and watching movies.. 
 
-![lokesh's headshot](../../images/headshot.jpg)
+![lokesh's headshot](/images/headshot.jpg)
 
 github link= [link to my github](https://github.com/lokeshreddy79/chimalpy-uc.github.io)
 
@@ -92,7 +92,7 @@ Web APIs Integration (20 pts)
 -The 'lastVisit' cookie persists thanks to the expires property and stores the last visit info client-side.
 
 
-
+![ss](images/Screenshot%20(132).png)
 ![SS1](images/Screenshot%20(129).png)
 ![ss2](images/Screenshot%20(130).png)
 ![ss3](images/Screenshot%20(131).png)
