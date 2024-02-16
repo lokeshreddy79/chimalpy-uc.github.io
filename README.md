@@ -14,6 +14,9 @@
 
 github link= [link to my github](https://github.com/lokeshreddy79/chimalpy-uc.github.io)
 
+Link to index.html= [Link to index.html](https://github.com/lokeshreddy79/chimalpy-uc.github.io/blob/main/index.html)
+
+
 
 ### INDIVIDUAL PROJECT -1 :
 
