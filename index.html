@@ -246,7 +246,15 @@
             </footer>
         </main>
     </div>
-
+<section class="quotes-section">
+    <div class="content-inner">
+        <h3>Inspirational Quote</h3>
+        <blockquote id="quoteContainer">
+            <p></p>
+        </blockquote>
+    </div>
+</section>
+    
     <a href="#" class="back-to-top" aria-label="Back to top"><i class="fa fa-angle-double-up"></i></a>
     <blockquote id="quote-display">
     <p></p>
@@ -357,56 +365,20 @@
             setCookie("lastVisit", new Date().toLocaleString(), 30);
         }
 
-        const quotes = [
-            {
-                text: "The only way to do great work is to love what you do.",
-                author: "Steve Jobs"
-            },
-            {
-                text: "Innovation distinguishes between a leader and a follower.",
-                author: "Steve Jobs"
-            },
-            {
-                text: "The future belongs to those who believe in the beauty of their dreams.",
-                author: "Eleanor Roosevelt"
-            },
-            {
-                text: "Success is not final, failure is not fatal: it is the courage to continue that counts.",
-                author: "Winston Churchill"
-            },
-            {
-                text: "The best way to predict the future is to create it.",
-                author: "Peter Drucker"
-            },
-            {
-                text: "Life is what happens to you while you're busy making other plans.",
-                author: "John Lennon"
-            },
-            {
-                text: "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-                author: "Nelson Mandela"
-            },
-            {
-                text: "The way to get started is to quit talking and begin doing.",
-                author: "Walt Disney"
-            },
-            {
-                text: "Your time is limited, don't waste it living someone else's life.",
-                author: "Steve Jobs"
-            },
-            {
-                text: "Strive not to be a success, but rather to be of value.",
-                author: "Albert Einstein"
-            }
-        ];
-
-        function displayRandomQuote() {
+      
+       /* function displayRandomQuote() {
             const quoteElement = document.getElementById('quote-display');
             const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
             
             quoteElement.querySelector('p').textContent = `"${randomQuote.text}"`;
             quoteElement.querySelector('footer').textContent = `- ${randomQuote.author}`;
-        }
+        }*/
+        <section class="jokes-section">
+    <div class="content-inner">
+        <h3>Chuck Norris Joke</h3>
+        <div id="jokeContainer"></div>
+    </div>
+       </section>
 
         // Initialize functionalities
         setInterval(displayTime, 1000);
