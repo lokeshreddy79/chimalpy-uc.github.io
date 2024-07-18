@@ -233,6 +233,83 @@ async function fetchData() {
         document.getElementById('quoteContainer').innerHTML = '<p>Failed to load quote. Please try again later.</p>';
     }
 }
+function createSkillTree() {
+    const width = 800;
+    const height = 600;
+    const margin = { top: 20, right: 120, bottom: 20, left: 120 };
+
+    const tree = d3.tree().size([height - margin.top - margin.bottom, width - margin.left - margin.right]);
+
+    const svg = d3.select("#skill-tree-container")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    const data = {
+        name: "Skills",
+        children: [
+            {
+                name: "Programming",
+                children: [
+                    { name: "Python", size: 80 },
+                    { name: "Java", size: 80 },
+                    { name: "JavaScript", size: 85 },
+                    { name: "SQL", size: 80 }
+                ]
+            },
+            {
+                name: "Web Development",
+                children: [
+                    { name: "HTML", size: 90 },
+                    { name: "CSS", size: 85 },
+                    { name: "React", size: 75 }
+                ]
+            },
+            {
+                name: "Data Science",
+                children: [
+                    { name: "Machine Learning", size: 70 },
+                    { name: "Data Analysis", size: 75 },
+                    { name: "Visualization", size: 80 }
+                ]
+            }
+        ]
+    };
+
+    const root = d3.hierarchy(data);
+    tree(root);
+
+    const link = svg.selectAll(".link")
+        .data(root.links())
+        .enter().append("path")
+        .attr("class", "link")
+        .attr("d", d3.linkHorizontal()
+            .x(d => d.y)
+            .y(d => d.x));
+
+    const node = svg.selectAll(".node")
+        .data(root.descendants())
+        .enter().append("g")
+        .attr("class", d => "node" + (d.children ? " node--internal" : " node--leaf"))
+        .attr("transform", d => `translate(${d.y},${d.x})`);
+
+    node.append("circle")
+        .attr("r", d => d.data.size ? Math.sqrt(d.data.size) / 2 : 5);
+
+    node.append("text")
+        .attr("dy", ".31em")
+        .attr("x", d => d.children ? -8 : 8)
+        .style("text-anchor", d => d.children ? "end" : "start")
+        .text(d => d.data.name);
+}
+
+// Call this function when the document is ready
+$(document).ready(function() {
+    // ... your existing code ...
+    createSkillTree();
+});
 
 async function fetchChuckNorrisJoke() {
     const url = 'https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random';
@@ -254,6 +331,7 @@ async function fetchChuckNorrisJoke() {
         document.getElementById('jokeContainer').innerHTML = '<p>Failed to load joke. Please try again later.</p>';
     }
 }
+
 
 /*async function fetchChuckNorrisJoke() {
     const url = 'https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random';
