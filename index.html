@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purna Lokesh Reddy Ch - Resume</title>
+    <meta name="description" content="Professional resume of Purna Lokesh Reddy Ch">
+    <meta name="keywords" content="resume, portfolio, Purna Lokesh Reddy Ch">
+
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="lib/slick/slick.css">
+    <link rel="stylesheet" href="lib/slick/slick-theme.css">
+    <link rel="stylesheet" href="lib/lightbox/css/lightbox.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-hierarchy/2.0.0/d3-hierarchy.min.js"></script>
+    
+    <style>
+        .quotes-section {
+            background-color: #f8f9fa;
+            padding: 2rem 0;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .quotes-section h3 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        #quote-display {
+            font-style: italic;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        #quote-display p {
+            font-size: 1.25rem;
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+        #quote-display footer {
+            font-size: 1rem;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <div class="wrapper">
+        <aside class="sidebar">
+            <header class="sidebar-header">
+                <img src="images/headshot.jpg" alt="Purna Lokesh Reddy Ch">
+            </header>
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a href="#" class="navbar-brand">Navigation</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#header">Home <i class="fa fa-home"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About <i class="fa fa-address-card"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Projects and Certifications <i class="fa fa-star"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Internships <i class="fa fa-tasks"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact <i class="fa fa-envelope"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <footer class="sidebar-footer">
+                 <a href="https://x.com/Lokiii_Uchihaaa" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/purna-lokesh-reddy-chimalamarri-196b8a277/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                
+        </aside>
+
+        <main class="content">
+            <section class="header" id="header">
+                <div class="content-inner">
+                    <p>I'm</p>
+                    <h1>Purna Lokesh Reddy Ch</h1>
+                    <h2 class="typed-text">Graduate Student</h2>
+
+                </div>
+            </section>
+
+            <section class="large-btn">
+                <div class="content-inner">
+                    <a class="btn" href="#"><i class="fa fa-download"></i>Resume</a>
+                    <a class="btn" href="#"><i class="fa fa-hands-helping"></i>Hire Me</a>
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <div class="content-inner">
+                    <div class="content-header">
+                        <h2>About Me</h2>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-lg-5">
+                            <img src="images/headshot.jpg" alt="Purna Lokesh Reddy Ch">
+                        </div>
+                        <div class="col-md-6 col-lg-7">
+                            <p>
+                                Pays close attention to detail to achieve team and individual goals and complete tasks accurately and consistently. I additionally provide freedom in scheduling, decision-making, and communication.
+                            </p>
+                            <a class="btn" href="#">Hire Me</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="skills">
+                                <section id="skill-tree" class="skill-tree">
+                                   <h2>My Skill Tree</h2>
+                                   <div id="skill-tree-container"></div>
+                                 </section>
+                                <div class="skill-name">
+                                    <p>Python</p><p>80%</p>
+                                </div>
+                                <div class="skill-name">
+                                    <p>SQL</p><p>80%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skills">
+                                <div class="skill-name">
+                                    <p>Java</p><p>80%</p>
+                                </div>
+                                <div class="skill-name">
+                                    <p>Javascript</p><p>85%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="education" id="education">
+                <!-- Education section content -->
+                <div class="education" id="education">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Education</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="edu-col">
+                                    <span>08-Aug-2023 <i>to</i> 14-Dec-2024</span>
+                                    <h3>Master's Degree</h3>
+                                    <p>Graduate student at University of Cincinnati in Information Technology Department</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="edu-col">
+                                    <span>15-Apr-2019 <i>to</i> 13-May-2023</span>
+                                    <h3>Bachelor's Degree</h3>
+                                    <p>From Tirumala Engineering College, Narasaraopet, Andhra Pradesh, India</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="experience" id="experience">
+                <!-- Experience section content -->
+            </section>
+
+            <section class="service" id="service">
+                <!-- Service section content -->
+               <section class="service" id="service">
+    <div class="content-inner">
+        <div class="content-header">
+            <h2>Internships</h2>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="srv-col">
+                    <i class="fa fa-laptop-code"></i>
+                    <h3>Front End Intern</h3>
+                    <h4>Just Dial</h4>
+                    <h5>November 2022 - March 2023</h5>
+                    <p>Technologies: JavaScript, HTML, React</p>
+                    <ul>
+                        <li>Constructed and implemented user-friendly interfaces for Just Dial products and platforms, resulting in 40% increase in user engagement.</li>
+                        <li>Implemented HTML5 for structuring and presenting content on the web.</li>
+                        <li>Created web pages using CSS capabilities utilizing Flexbox, animations.</li>
+                        <li>Developed dynamic web interfaces and UIs leveraging React.js and Angular frameworks to enrich user experience.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="srv-col">
+                    <i class="fa fa-code"></i>
+                    <h3>Python Developer Intern</h3>
+                    <h4>APSSDC (Andhra Pradesh State Skill Development Corporation)</h4>
+                    <h5>January 2022 - June 2022</h5>
+                    <p>Technologies: Python, Data Structures, Algorithms</p>
+                    <ul>
+                        <li>Completed a comprehensive Python programming internship, focusing on core concepts and practical applications.</li>
+                        <li>Developed proficiency in Python syntax, data structures, and object-oriented programming principles.</li>
+                        <li>Worked on various projects to enhance problem-solving skills and coding practices.</li>
+                        <li>Gained hands-on experience with Python libraries and frameworks commonly used in software development.</li>
+                        <li>Collaborated with other interns on team projects, improving communication and teamwork skills.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <section class="contact" id="contact">
+                <!-- Contact section content -->
+            </section>
+
+            <section class="quotes-section">
+                <div class="content-inner">
+                    <h3>Inspirational Quote</h3>
+                    <blockquote id="quote-display">
+                        <p></p>
+                        <footer></footer>
+                    </blockquote>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="content-inner">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <p>&copy; 2024 Purna Lokesh Reddy Ch. All Rights Reserved</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Powered by <a href="https://htmlcodex.com">HTML Codex</a></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+    
+    <a href="#" class="back-to-top" aria-label="Back to top"><i class="fa fa-angle-double-up"></i></a>
+    <blockquote id="quote-display">
+    <p></p>
+    <footer></footer>
+    </blockquote>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="js/main.js"></script>
+
+   <script>
+    (function() {
+        function displayTime() {
+            document.getElementById('digit-clock').textContent = "Current time: " + new Date().toLocaleString();
+        }
+
+        function drawAnalogClock() {
+            var canvas = document.getElementById('analog-clock');
+            var ctx = canvas.getContext("2d");
+            var radius = canvas.height / 2;
+            ctx.translate(radius, radius);
+            radius = radius * 0.90;
+            
+            // Draw clock face
+            ctx.beginPath();
+            ctx.arc(0, 0, radius, 0, 2 * Math.PI);
+            ctx.fillStyle = 'white';
+            ctx.fill();
+            ctx.strokeStyle = 'black';
+            ctx.lineWidth = radius * 0.1;
+            ctx.stroke();
+            
+            // Draw clock center
+            ctx.beginPath();
+            ctx.arc(0, 0, radius * 0.1, 0, 2 * Math.PI);
+            ctx.fillStyle = 'black';
+            ctx.fill();
+            
+            // Draw hour marks
+            for (let num = 1; num <= 12; num++) {
+                let angle = num * Math.PI / 6;
+                ctx.rotate(angle);
+                ctx.moveTo(0, -radius * 0.85);
+                ctx.lineTo(0, -radius * 0.95);
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = radius * 0.02;
+                ctx.stroke();
+                ctx.rotate(-angle);
+            }
+            
+            // Get current time
+            let now = new Date();
+            let hour = now.getHours() % 12;
+            let minute = now.getMinutes();
+            let second = now.getSeconds();
+            
+            // Draw hour hand
+            hour = (hour * Math.PI / 6) + (minute * Math.PI / (6 * 60)) + (second * Math.PI / (360 * 60));
+            drawHand(ctx, hour, radius * 0.5, radius * 0.07);
+            
+            // Draw minute hand
+            minute = (minute * Math.PI / 30) + (second * Math.PI / (30 * 60));
+            drawHand(ctx, minute, radius * 0.8, radius * 0.07);
+            
+            // Draw second hand
+            second = (second * Math.PI / 30);
+            drawHand(ctx, second, radius * 0.9, radius * 0.02);
+        }
+        
+        function drawHand(ctx, pos, length, width) {
+            ctx.beginPath();
+            ctx.lineWidth = width;
+            ctx.lineCap = "round";
+            ctx.moveTo(0, 0);
+            ctx.rotate(pos);
+            ctx.lineTo(0, -length);
+            ctx.stroke();
+            ctx.rotate(-pos);
+        }
+
+        function setCookie(name, value, days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            document.cookie = `${name}=${value};expires=${date.toUTCString()};path=/`;
+        }
+
+        function getCookie(name) {
+            const cookies = document.cookie.split(';');
+            for (let cookie of cookies) {
+                const [cookieName, cookieValue] = cookie.split('=').map(c => c.trim());
+                if (cookieName === name) return cookieValue;
+            }
+            return null;
+        }
+
+        function displayWelcomeMessage() {
+            const lastVisit = getCookie("lastVisit");
+            const message = lastVisit 
+                ? `Welcome back! Your last visit was ${lastVisit}`
+                : "Welcome to my homepage!";
+            alert(message);
+            setCookie("lastVisit", new Date().toLocaleString(), 30);
+        }
+
+      
+        function displayRandomQuote() {
+            const quoteElement = document.getElementById('quote-display');
+            const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+            
+            quoteElement.querySelector('p').textContent = `"${randomQuote.text}"`;
+            quoteElement.querySelector('footer').textContent = `- ${randomQuote.author}`;
+        }
+        <section class="jokes-section">
+    <div class="content-inner">
+        <h3>Chuck Norris Joke</h3>
+        <div id="jokeContainer"></div>
+    </div>
+       </section>
+
+        // Initialize functionalities
+        setInterval(displayTime, 1000);
+        setInterval(drawAnalogClock, 1000);
+        displayWelcomeMessage();
+        displayRandomQuote();
+        setInterval(displayRandomQuote, 10000); // Change quote every 10 seconds
+
+        document.getElementById('email').addEventListener('click', function() {
+            const emailElement = this;
+            if (emailElement.textContent === "Show my Email") {
+                emailElement.innerHTML = '<a href="mailto:chimalpy@ucmail.uc.edu">chimalpy@ucmail.uc.edu</a>';
+            } else {
+                emailElement.textContent = "Show my Email";
+            }
+        });
+    })();
+</script>
+<script>
+// Contents of main.js go here
+    (function ($) {
+    "use strict";
+    
+    // Smooth scrolling on the navbar links
+    $(".navbar-nav a").on('click', function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            
+            $('html, body').animate({
+                scrollTop: $(this.hash).offset().top - 30
+            }, 1500, 'easeInOutExpo');
+            
+            if ($(this).parents('.navbar-nav').length) {
+                $('.navbar-nav .active').removeClass('active');
+                $(this).closest('a').addClass('active');
+            }
+        }
+    });
+
+
+    // Typed Initiate
+    if ($('.header h2').length == 1) {
+        var typed_strings = $('.header .typed-text').text();
+        var typed = new Typed('.header h2', {
+            strings: typed_strings.split(', '),
+            typeSpeed: 100,
+            backSpeed: 20,
+            smartBackspace: false,
+            loop: true
+        });
+    }
+    
+    
+    // Skills
+    $('.skills').waypoint(function () {
+        $('.progress .progress-bar').each(function () {
+            $(this).css("width", $(this).attr("aria-valuenow") + '%');
+        });
+    }, {offset: '80%'});
+    
+    
+    // Porfolio isotope and filter
+    var portfolioIsotope = $('.portfolio-container').isotope({
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows'
+    });
+
+    $('#portfolio-flters li').on('click', function () {
+        $("#portfolio-flters li").removeClass('filter-active');
+        $(this).addClass('filter-active');
+
+        portfolioIsotope.isotope({filter: $(this).data('filter')});
+    });
+    
+    
+    // Review slider
+    $('.review-slider').slick({
+        autoplay: true,
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+    
+    
+    // Back to top button
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('slow');
+        }
+    });
+    $('.back-to-top').click(function () {
+        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        return false;
+    });
+})(jQuery);
+
+// Clock functions
+function displayTime() {
+    document.getElementById('digit-clock').textContent = "Current time: " + new Date().toLocaleString();
+}
+
+function drawAnalogClock() {
+    function drawAnalogClock() {
+    var canvas = document.getElementById('analog-clock');
+    var ctx = canvas.getContext("2d");
+    var radius = canvas.height / 2;
+    ctx.translate(radius, radius);
+    radius = radius * 0.90;
+    
+    // Draw clock face
+    ctx.beginPath();
+    ctx.arc(0, 0, radius, 0, 2 * Math.PI);
+    ctx.fillStyle = 'white';
+    ctx.fill();
+    ctx.strokeStyle = 'black';
+    ctx.lineWidth = radius * 0.1;
+    ctx.stroke();
+    
+    // Draw clock center
+    ctx.beginPath();
+    ctx.arc(0, 0, radius * 0.1, 0, 2 * Math.PI);
+    ctx.fillStyle = 'black';
+    ctx.fill();
+    
+    // Draw hour marks
+    for (let num = 1; num <= 12; num++) {
+        let angle = num * Math.PI / 6;
+        ctx.rotate(angle);
+        ctx.moveTo(0, -radius * 0.85);
+        ctx.lineTo(0, -radius * 0.95);
+        ctx.strokeStyle = 'black';
+        ctx.lineWidth = radius * 0.02;
+        ctx.stroke();
+        ctx.rotate(-angle);
+    }
+    
+    // Get current time
+    let now = new Date();
+    let hour = now.getHours() % 12;
+    let minute = now.getMinutes();
+    let second = now.getSeconds();
+    
+    // Draw hour hand
+    hour = (hour * Math.PI / 6) + (minute * Math.PI / (6 * 60)) + (second * Math.PI / (360 * 60));
+    drawHand(ctx, hour, radius * 0.5, radius * 0.07);
+    
+    // Draw minute hand
+    minute = (minute * Math.PI / 30) + (second * Math.PI / (30 * 60));
+    drawHand(ctx, minute, radius * 0.8, radius * 0.07);
+    
+    // Draw second hand
+    second = (second * Math.PI / 30);
+    drawHand(ctx, second, radius * 0.9, radius * 0.02);
+}
+
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0, 0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
+    // ... (keep the existing drawAnalogClock function)
+}
+
+// Cookie functions
+function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    document.cookie = `${name}=${value};expires=${date.toUTCString()};path=/`;
+}
+
+function getCookie(name) {
+    const cookies = document.cookie.split(';');
+    for (let cookie of cookies) {
+        const [cookieName, cookieValue] = cookie.split('=').map(c => c.trim());
+        if (cookieName === name) return cookieValue;
+    }
+    return null;
+}
+
+function displayWelcomeMessage() {
+    const lastVisit = getCookie("lastVisit");
+    const message = lastVisit 
+        ? `Welcome back! Your last visit was ${lastVisit}`
+        : "Welcome to my homepage!";
+    alert(message);
+    setCookie("lastVisit", new Date().toLocaleString(), 30);
+}
+
+// Initialize all functionalities
+$(document).ready(function() {
+    setInterval(displayTime, 1000);
+    setInterval(drawAnalogClock, 1000);
+    displayWelcomeMessage();
+    fetchData();
+    fetchChuckNorrisJoke();
+
+    $('#email').on('click', function() {
+        const emailElement = $(this);
+        if (emailElement.text() === "Show my Email") {
+            emailElement.html('<a href="mailto:chimalpy@ucmail.uc.edu">chimalpy@ucmail.uc.edu</a>');
+        } else {
+            emailElement.text("Show my Email");
+        }
+    });
+});
+
+async function fetchData() {
+    const url = 'https://quotes15.p.rapidapi.com/quotes/random/';
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': '76d3917378mshff568fed8e12a08p136191jsnb9cb215f94ac',
+            'X-RapidAPI-Host': 'quotes15.p.rapidapi.com'
+        }
+    };
+
+    try {
+        const response = await fetch(url, options);
+        const result = await response.json();
+        const quoteContainer = document.getElementById('quoteContainer');
+        quoteContainer.innerHTML = `<p>${result.content} - ${result.originator.name}</p>`;
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+fetchData();
+
+async function fetchData() {
+    const url = 'https://quotes15.p.rapidapi.com/quotes/random/';
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': '76d3917378mshff568fed8e12a08p136191jsnb9cb215f94ac',
+            'X-RapidAPI-Host': 'quotes15.p.rapidapi.com'
+        }
+    };
+    try {
+        const response = await fetch(url, options);
+        const result = await response.json();
+        const quoteContainer = document.getElementById('quoteContainer');
+        quoteContainer.innerHTML = `<p>${result.content} - ${result.originator.name}</p>`;
+    } catch (error) {
+        console.error('Error fetching quote:', error);
+        document.getElementById('quoteContainer').innerHTML = '<p>Failed to load quote. Please try again later.</p>';
+    }
+}
+function createSkillTree() {
+    const width = 800;
+    const height = 600;
+    const margin = { top: 20, right: 120, bottom: 20, left: 120 };
+
+    const tree = d3.tree().size([height - margin.top - margin.bottom, width - margin.left - margin.right]);
+
+    const svg = d3.select("#skill-tree-container")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    const data = {
+        name: "Skills",
+        children: [
+            {
+                name: "Programming",
+                children: [
+                    { name: "Python", size: 80 },
+                    { name: "Java", size: 80 },
+                    { name: "JavaScript", size: 85 },
+                    { name: "SQL", size: 80 }
+                ]
+            },
+            {
+                name: "Web Development",
+                children: [
+                    { name: "HTML", size: 90 },
+                    { name: "CSS", size: 85 },
+                    { name: "React", size: 75 }
+                ]
+            },
+            {
+                name: "Data Science",
+                children: [
+                    { name: "Machine Learning", size: 70 },
+                    { name: "Data Analysis", size: 75 },
+                    { name: "Visualization", size: 80 }
+                ]
+            }
+        ]
+    };
+
+    const root = d3.hierarchy(data);
+    tree(root);
+
+    const link = svg.selectAll(".link")
+        .data(root.links())
+        .enter().append("path")
+        .attr("class", "link")
+        .attr("d", d3.linkHorizontal()
+            .x(d => d.y)
+            .y(d => d.x));
+
+    const node = svg.selectAll(".node")
+        .data(root.descendants())
+        .enter().append("g")
+        .attr("class", d => "node" + (d.children ? " node--internal" : " node--leaf"))
+        .attr("transform", d => `translate(${d.y},${d.x})`);
+
+    node.append("circle")
+        .attr("r", d => d.data.size ? Math.sqrt(d.data.size) / 2 : 5);
+
+    node.append("text")
+        .attr("dy", ".31em")
+        .attr("x", d => d.children ? -8 : 8)
+        .style("text-anchor", d => d.children ? "end" : "start")
+        .text(d => d.data.name);
+}
+
+// Call this function when the document is ready
+$(document).ready(function() {
+    // ... your existing code ...
+    createSkillTree();
+});
+
+async function fetchChuckNorrisJoke() {
+    const url = 'https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random';
+    const options = {
+        method: 'GET',
+        headers: {
+            accept: 'application/json',
+            'X-RapidAPI-Key': '76d3917378mshff568fed8e12a08p136191jsnb9cb215f94ac',
+            'X-RapidAPI-Host': 'matchilling-chuck-norris-jokes-v1.p.rapidapi.com'
+        }
+    };
+    try {
+        const response = await fetch(url, options);
+        const result = await response.json();
+        const jokeContainer = document.getElementById('jokeContainer');
+        jokeContainer.innerHTML = `<p>${result.value}</p>`;
+    } catch (error) {
+        console.error('Error fetching joke:', error);
+        document.getElementById('jokeContainer').innerHTML = '<p>Failed to load joke. Please try again later.</p>';
+    }
+}
+
+
+async function fetchChuckNorrisJoke() {
+    const url = 'https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random';
+    const options = {
+        method: 'GET',
+        headers: {
+            accept: 'application/json',
+            'X-RapidAPI-Key': '76d3917378mshff568fed8e12a08p136191jsnb9cb215f94ac',
+            'X-RapidAPI-Host': 'matchilling-chuck-norris-jokes-v1.p.rapidapi.com'
+        }
+    };
+
+    try {
+        const response = await fetch(url, options);
+        const result = await response.json();
+        const jokeContainer = document.getElementById('jokeContainer');
+        jokeContainer.innerHTML = `<p>${result.value}</p>`;
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+fetchChuckNorrisJoke();
+
+</script>
+    
+</body>
+</html>
